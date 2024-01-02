@@ -63,42 +63,57 @@ CMAKE_BINARY_DIR = /Users/jl/Documents/Alogrithm/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/monster.dir/all
+all: writeShell/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: writeShell/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/monster.dir/clean
+clean: writeShell/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/monster.dir
+# Directory level rules for directory writeShell
+
+# Recursive "all" directory target.
+writeShell/all: writeShell/CMakeFiles/writeShell.dir/all
+.PHONY : writeShell/all
+
+# Recursive "preinstall" directory target.
+writeShell/preinstall:
+.PHONY : writeShell/preinstall
+
+# Recursive "clean" directory target.
+writeShell/clean: writeShell/CMakeFiles/writeShell.dir/clean
+.PHONY : writeShell/clean
+
+#=============================================================================
+# Target rules for target writeShell/CMakeFiles/writeShell.dir
 
 # All Build rule for target.
-CMakeFiles/monster.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monster.dir/build.make CMakeFiles/monster.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monster.dir/build.make CMakeFiles/monster.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jl/Documents/Alogrithm/build/CMakeFiles --progress-num=1,2 "Built target monster"
-.PHONY : CMakeFiles/monster.dir/all
+writeShell/CMakeFiles/writeShell.dir/all:
+	$(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/depend
+	$(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jl/Documents/Alogrithm/build/CMakeFiles --progress-num=1,2 "Built target writeShell"
+.PHONY : writeShell/CMakeFiles/writeShell.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/monster.dir/rule: cmake_check_build_system
+writeShell/CMakeFiles/writeShell.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jl/Documents/Alogrithm/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/monster.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/CMakeFiles/writeShell.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jl/Documents/Alogrithm/build/CMakeFiles 0
-.PHONY : CMakeFiles/monster.dir/rule
+.PHONY : writeShell/CMakeFiles/writeShell.dir/rule
 
 # Convenience name for target.
-monster: CMakeFiles/monster.dir/rule
-.PHONY : monster
+writeShell: writeShell/CMakeFiles/writeShell.dir/rule
+.PHONY : writeShell
 
 # clean rule for target.
-CMakeFiles/monster.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monster.dir/build.make CMakeFiles/monster.dir/clean
-.PHONY : CMakeFiles/monster.dir/clean
+writeShell/CMakeFiles/writeShell.dir/clean:
+	$(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/clean
+.PHONY : writeShell/CMakeFiles/writeShell.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

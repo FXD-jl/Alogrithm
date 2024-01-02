@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jl/Documents/Alogrithm/build/CMakeFiles /Users/jl/Documents/Alogrithm/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/jl/Documents/Alogrithm/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/jl/Documents/Alogrithm/build/CMakeFiles /Users/jl/Documents/Alogrithm/build/writeShell//CMakeFiles/progress.marks
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jl/Documents/Alogrithm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,31 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/jl/Documents/Alogrithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named writeShell
+# Convenience name for target.
+writeShell/CMakeFiles/writeShell.dir/rule:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/CMakeFiles/writeShell.dir/rule
+.PHONY : writeShell/CMakeFiles/writeShell.dir/rule
 
-# Build rule for target.
-writeShell: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell
+# Convenience name for target.
+writeShell: writeShell/CMakeFiles/writeShell.dir/rule
 .PHONY : writeShell
 
 # fast build rule for target.
 writeShell/fast:
-	$(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/build
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/build
 .PHONY : writeShell/fast
+
+src/main.o: src/main.c.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -138,6 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... writeShell"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
@@ -149,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/jl/Documents/Alogrithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

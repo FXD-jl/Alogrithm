@@ -222,6 +222,15 @@ monster_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 monster_SOURCE_DIR:STATIC=/Users/jl/Documents/Alogrithm
 
+//Value Computed by CMake
+writeShell_BINARY_DIR:STATIC=/Users/jl/Documents/Alogrithm/build/writeShell
+
+//Value Computed by CMake
+writeShell_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+writeShell_SOURCE_DIR:STATIC=/Users/jl/Documents/Alogrithm/writeShell
+
 
 ########################
 # INTERNAL cache entries
@@ -321,7 +330,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -49,6 +49,7 @@ typedef struct ActionEffect_ {
   int monk;
 } ActionEffect;
 
+
 #define CAPACITY(capcity) ((capcity == 0) ? 8 : 2 * (capcity))
 
 #endif
