@@ -1,5 +1,5 @@
 /Users/jl/Documents/Alogrithm/build/CMakeFiles/edit_cache.dir
 /Users/jl/Documents/Alogrithm/build/CMakeFiles/rebuild_cache.dir
-/Users/jl/Documents/Alogrithm/build/writeShell/CMakeFiles/writeShell.dir
-/Users/jl/Documents/Alogrithm/build/writeShell/CMakeFiles/edit_cache.dir
-/Users/jl/Documents/Alogrithm/build/writeShell/CMakeFiles/rebuild_cache.dir
+/Users/jl/Documents/Alogrithm/build/writeShell/test/CMakeFiles/test.dir
+/Users/jl/Documents/Alogrithm/build/writeShell/test/CMakeFiles/edit_cache.dir
+/Users/jl/Documents/Alogrithm/build/writeShell/test/CMakeFiles/rebuild_cache.dir

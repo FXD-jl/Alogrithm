@@ -223,13 +223,22 @@ monster_IS_TOP_LEVEL:STATIC=ON
 monster_SOURCE_DIR:STATIC=/Users/jl/Documents/Alogrithm
 
 //Value Computed by CMake
-writeShell_BINARY_DIR:STATIC=/Users/jl/Documents/Alogrithm/build/writeShell
+test_BINARY_DIR:STATIC=/Users/jl/Documents/Alogrithm/build/writeShell/test
+
+//Value Computed by CMake
+test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+test_SOURCE_DIR:STATIC=/Users/jl/Documents/Alogrithm/writeShell/test
+
+//Value Computed by CMake
+writeShell_BINARY_DIR:STATIC=/Users/jl/Documents/Alogrithm/build/writeShell/src
 
 //Value Computed by CMake
 writeShell_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-writeShell_SOURCE_DIR:STATIC=/Users/jl/Documents/Alogrithm/writeShell
+writeShell_SOURCE_DIR:STATIC=/Users/jl/Documents/Alogrithm/writeShell/src
 
 
 ########################

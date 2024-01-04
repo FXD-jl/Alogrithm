@@ -1,8 +1,14 @@
 [
 {
-  "directory": "/Users/jl/Documents/Alogrithm/build/writeShell",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -I/Users/jl/Documents/Alogrithm/writeShell/./include -g -std=gnu17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/writeShell.dir/src/main.c.o -c /Users/jl/Documents/Alogrithm/writeShell/src/main.c",
-  "file": "/Users/jl/Documents/Alogrithm/writeShell/src/main.c",
-  "output": "writeShell/CMakeFiles/writeShell.dir/src/main.c.o"
+  "directory": "/Users/jl/Documents/Alogrithm/build/writeShell/test",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -I/Users/jl/Documents/Alogrithm/writeShell/test/../include -g -std=gnu17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/test.dir/__/src/writeShell.c.o -c /Users/jl/Documents/Alogrithm/writeShell/src/writeShell.c",
+  "file": "/Users/jl/Documents/Alogrithm/writeShell/src/writeShell.c",
+  "output": "writeShell/test/CMakeFiles/test.dir/__/src/writeShell.c.o"
+},
+{
+  "directory": "/Users/jl/Documents/Alogrithm/build/writeShell/test",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -I/Users/jl/Documents/Alogrithm/writeShell/test/../include -g -std=gnu17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/test.dir/testSplit.c.o -c /Users/jl/Documents/Alogrithm/writeShell/test/testSplit.c",
+  "file": "/Users/jl/Documents/Alogrithm/writeShell/test/testSplit.c",
+  "output": "writeShell/test/CMakeFiles/test.dir/testSplit.c.o"
 }
 ]

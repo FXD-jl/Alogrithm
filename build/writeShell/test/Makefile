@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jl/Documents/Alogrithm/build/CMakeFiles /Users/jl/Documents/Alogrithm/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/jl/Documents/Alogrithm/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/jl/Documents/Alogrithm/build/CMakeFiles /Users/jl/Documents/Alogrithm/build/writeShell/test//CMakeFiles/progress.marks
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jl/Documents/Alogrithm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,31 +103,80 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/jl/Documents/Alogrithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named test
+# Convenience name for target.
+writeShell/test/CMakeFiles/test.dir/rule:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/test/CMakeFiles/test.dir/rule
+.PHONY : writeShell/test/CMakeFiles/test.dir/rule
 
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+# Convenience name for target.
+test: writeShell/test/CMakeFiles/test.dir/rule
 .PHONY : test
 
 # fast build rule for target.
 test/fast:
-	$(MAKE) $(MAKESILENT) -f writeShell/test/CMakeFiles/test.dir/build.make writeShell/test/CMakeFiles/test.dir/build
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/test/CMakeFiles/test.dir/build.make writeShell/test/CMakeFiles/test.dir/build
 .PHONY : test/fast
+
+__/src/writeShell.o: __/src/writeShell.c.o
+.PHONY : __/src/writeShell.o
+
+# target to build an object file
+__/src/writeShell.c.o:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/test/CMakeFiles/test.dir/build.make writeShell/test/CMakeFiles/test.dir/__/src/writeShell.c.o
+.PHONY : __/src/writeShell.c.o
+
+__/src/writeShell.i: __/src/writeShell.c.i
+.PHONY : __/src/writeShell.i
+
+# target to preprocess a source file
+__/src/writeShell.c.i:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/test/CMakeFiles/test.dir/build.make writeShell/test/CMakeFiles/test.dir/__/src/writeShell.c.i
+.PHONY : __/src/writeShell.c.i
+
+__/src/writeShell.s: __/src/writeShell.c.s
+.PHONY : __/src/writeShell.s
+
+# target to generate assembly for a file
+__/src/writeShell.c.s:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/test/CMakeFiles/test.dir/build.make writeShell/test/CMakeFiles/test.dir/__/src/writeShell.c.s
+.PHONY : __/src/writeShell.c.s
+
+testSplit.o: testSplit.c.o
+.PHONY : testSplit.o
+
+# target to build an object file
+testSplit.c.o:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/test/CMakeFiles/test.dir/build.make writeShell/test/CMakeFiles/test.dir/testSplit.c.o
+.PHONY : testSplit.c.o
+
+testSplit.i: testSplit.c.i
+.PHONY : testSplit.i
+
+# target to preprocess a source file
+testSplit.c.i:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/test/CMakeFiles/test.dir/build.make writeShell/test/CMakeFiles/test.dir/testSplit.c.i
+.PHONY : testSplit.c.i
+
+testSplit.s: testSplit.c.s
+.PHONY : testSplit.s
+
+# target to generate assembly for a file
+testSplit.c.s:
+	cd /Users/jl/Documents/Alogrithm/build && $(MAKE) $(MAKESILENT) -f writeShell/test/CMakeFiles/test.dir/build.make writeShell/test/CMakeFiles/test.dir/testSplit.c.s
+.PHONY : testSplit.c.s
 
 # Help Target
 help:
@@ -138,6 +187,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... __/src/writeShell.o"
+	@echo "... __/src/writeShell.i"
+	@echo "... __/src/writeShell.s"
+	@echo "... testSplit.o"
+	@echo "... testSplit.i"
+	@echo "... testSplit.s"
 .PHONY : help
 
 
@@ -149,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/jl/Documents/Alogrithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
