@@ -9,7 +9,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
 
 add_subdirectory(./writeShell/src)
-#add_subdirectory(./writeShell/test) 
+add_subdirectory(./writeShell/test) 
 #aux_source_directory(. DirSrcs)
 #include_directories(./include)
 
