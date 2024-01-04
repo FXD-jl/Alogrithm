@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/_types/_pid_t.h>
+#include <sys/wait.h>
 #include <unistd.h>
 
 #define LSH_RL_BUFSIZE 1024
@@ -104,5 +104,10 @@ int lsh_launch(char **args) {
   }
   return 1;
 }
+
+char *builtin_str[] = {"cd", "help", "exit"};
+
+int (*builtin_fun[])(char **args) = {&lsh_cd, &lsh_help, &lsh_exit};
+
 
 

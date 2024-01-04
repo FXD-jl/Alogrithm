@@ -57,10 +57,10 @@ RM = /home/linuxbrew/.linuxbrew/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jl/document/Alogrithm
+CMAKE_SOURCE_DIR = /home/jl/Documents/Alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jl/document/Alogrithm/build
+CMAKE_BINARY_DIR = /home/jl/Documents/Alogrithm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jl/document/Alogrithm/build/CMakeFiles /home/jl/document/Alogrithm/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jl/Documents/Alogrithm/build/CMakeFiles /home/jl/Documents/Alogrithm/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jl/document/Alogrithm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jl/Documents/Alogrithm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,6 +116,19 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named writeShell
+
+# Build rule for target.
+writeShell: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell
+.PHONY : writeShell
+
+# fast build rule for target.
+writeShell/fast:
+	$(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/build
+.PHONY : writeShell/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +137,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... writeShell"
 .PHONY : help
 
 

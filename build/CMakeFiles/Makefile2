@@ -54,58 +54,66 @@ RM = /home/linuxbrew/.linuxbrew/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jl/document/Alogrithm
+CMAKE_SOURCE_DIR = /home/jl/Documents/Alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jl/document/Alogrithm/build
+CMAKE_BINARY_DIR = /home/jl/Documents/Alogrithm/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: writeShell/src/all
-all: writeShell/test/all
+all: writeShell/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: writeShell/src/preinstall
-preinstall: writeShell/test/preinstall
+preinstall: writeShell/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: writeShell/src/clean
-clean: writeShell/test/clean
+clean: writeShell/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory writeShell/src
+# Directory level rules for directory writeShell
 
 # Recursive "all" directory target.
-writeShell/src/all:
-.PHONY : writeShell/src/all
+writeShell/all: writeShell/CMakeFiles/writeShell.dir/all
+.PHONY : writeShell/all
 
 # Recursive "preinstall" directory target.
-writeShell/src/preinstall:
-.PHONY : writeShell/src/preinstall
+writeShell/preinstall:
+.PHONY : writeShell/preinstall
 
 # Recursive "clean" directory target.
-writeShell/src/clean:
-.PHONY : writeShell/src/clean
+writeShell/clean: writeShell/CMakeFiles/writeShell.dir/clean
+.PHONY : writeShell/clean
 
 #=============================================================================
-# Directory level rules for directory writeShell/test
+# Target rules for target writeShell/CMakeFiles/writeShell.dir
 
-# Recursive "all" directory target.
-writeShell/test/all:
-.PHONY : writeShell/test/all
+# All Build rule for target.
+writeShell/CMakeFiles/writeShell.dir/all:
+	$(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/depend
+	$(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jl/Documents/Alogrithm/build/CMakeFiles --progress-num=1,2,3 "Built target writeShell"
+.PHONY : writeShell/CMakeFiles/writeShell.dir/all
 
-# Recursive "preinstall" directory target.
-writeShell/test/preinstall:
-.PHONY : writeShell/test/preinstall
+# Build rule for subdir invocation for target.
+writeShell/CMakeFiles/writeShell.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jl/Documents/Alogrithm/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writeShell/CMakeFiles/writeShell.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jl/Documents/Alogrithm/build/CMakeFiles 0
+.PHONY : writeShell/CMakeFiles/writeShell.dir/rule
 
-# Recursive "clean" directory target.
-writeShell/test/clean:
-.PHONY : writeShell/test/clean
+# Convenience name for target.
+writeShell: writeShell/CMakeFiles/writeShell.dir/rule
+.PHONY : writeShell
+
+# clean rule for target.
+writeShell/CMakeFiles/writeShell.dir/clean:
+	$(MAKE) $(MAKESILENT) -f writeShell/CMakeFiles/writeShell.dir/build.make writeShell/CMakeFiles/writeShell.dir/clean
+.PHONY : writeShell/CMakeFiles/writeShell.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
