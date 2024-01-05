@@ -1,6 +1,6 @@
 #include "writeShell.h"
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 void lsh_loop(void) {
   char *line;
@@ -27,5 +27,3 @@ int main(int argc, char **grgv) {
   // per
   return EXIT_SUCCESS;
 }
-
-

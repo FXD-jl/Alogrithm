@@ -105,9 +105,49 @@ int lsh_launch(char **args) {
   return 1;
 }
 
+// 设置一个函数指针数组，每一个指针数组的index与字符串数组的index对应
+// 这样通过比较字符串数组中的字符串获取index，从而调用对应的函数
 char *builtin_str[] = {"cd", "help", "exit"};
-
 int (*builtin_fun[])(char **args) = {&lsh_cd, &lsh_help, &lsh_exit};
 
+int lsh_num_builtins() { return sizeof(builtin_str) / sizeof(char *); }
 
+int lsh_cd(char **args) {
+  if (args[1] == NULL) {
+    fprintf(stderr, "lsh: expect argument to\"cd\"\n");
+  } else {
+    // 切换目录函数
+    if (chdir(args[1]) != 0) {
+      perror("lsh");
+    }
+  }
+  return 1;
+}
 
+int lsh_help(char **args) {
+  int i;
+  printf("Stephen Brennan's LSH\n");
+  printf("Type program names and arguments, and hit enter.\n");
+  printf("The following are built in:\n");
+
+  for (i = 0; i < lsh_num_builtins(); i++) {
+    printf("  %s\n", builtin_str[i]);
+  }
+  printf("Use the man command for information on other programs.\n");
+  return 1;
+}
+
+int lsh_exit(char **args) { return 0; }
+
+int lsh_execute(char **args) {
+  int i;
+  if (args[0] == NULL) {
+    return 1;
+  }
+  for (i = 0; i < lsh_num_builtins(); i++) {
+    if (strcmp(args[0], builtin_str[i]) == 0) {
+      return (*builtin_fun[i])(args);
+    }
+  }
+  return lsh_launch(args);
+}
