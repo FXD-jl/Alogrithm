@@ -10,3 +10,4 @@ while True:
 
     gamewindow.fill(WHITE)
     pygame.display.flip()
+KeyboardInterrupt
