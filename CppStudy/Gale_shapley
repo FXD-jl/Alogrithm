@@ -1,0 +1,193 @@
+#include <fstream>
+#include <iostream>
+#include <map>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+// 定义性别
+typedef enum {
+  MALE = 0,
+  FEMALE = 1,
+} Sex;
+
+// 定义婚姻状态
+typedef enum {
+  NOMARRIED,
+  MARRIED,
+} MarriedStatus;
+
+// 定义参加配对的人员类型
+struct Partner {
+  std::string name;
+  int age;
+  Sex sex;
+  MarriedStatus married_status;
+  std::string married_name;
+  std::vector<std::string> prefer_partner_name;
+
+  Partner(std::string name, int age, Sex sex,
+          std::vector<std::string> &prefer_partner_name)
+      : name{name}, age{age}, sex{sex}, married_status{NOMARRIED},
+        married_name{""}, prefer_partner_name{prefer_partner_name} {};
+
+  ~Partner() = default;
+};
+
+// 配对会的管理者，负责登记参会人员，同时采用Gale-Shapley algorithm将男女配对
+struct Manager {
+  std::vector<Partner> male_partner_lists;
+  std::vector<Partner> female_partner_lists;
+  Manager() = default;
+
+  // 登记信息,并将参会人员加入各自性别的管理表
+  void logging_message(const std::string &filename) {
+    // 格式为 filename文件的每一行为sex = 0/1 name age name1 name2 name3...
+    // name为登记的人员名，name1,name2，是name偏好的信息列表
+    std::ifstream file(filename);
+    std::string line;
+    if (!file.is_open()) {
+      throw std::runtime_error("Can't open file\n");
+    }
+    while (getline(file, line)) {
+      std::istringstream iss(line);
+      std::string token;
+      int count = 0;
+      int age;
+      Sex sex;
+      std::string name;
+      std::vector<std::string> prefer;
+      while (iss >> token) {
+        switch (count) {
+        case 0:
+          // BUG 转换失败暂未提供处理方法
+          sex = static_cast<Sex>(std::stoi(token));
+          break;
+        case 1:
+          name = token;
+          break;
+        case 2:
+          age = std::stoi(token);
+          break;
+        default:
+          prefer.push_back(token);
+        }
+        count++;
+      }
+
+      if (sex == MALE) {
+        male_partner_lists.push_back(Partner(name, age, sex, prefer));
+      } else if (sex == FEMALE) {
+        female_partner_lists.push_back(Partner(name, age, sex, prefer));
+      }
+    }
+    // 将名字与类的index映射
+    fill_partner_map();
+    file.close();
+  };
+
+  Partner &get_partner_by_name(std::string name) {
+    auto index_male = male_partner_map.find(name);
+    auto index_female = female_partner_map.find(name);
+    if (index_male != male_partner_map.end()) {
+      return male_partner_lists[index_male->second];
+    } else if (index_female != female_partner_map.end()) {
+      return female_partner_lists[index_female->second];
+    } else {
+      throw std::runtime_error("name isn't in!\n");
+    }
+  }
+
+  void Gale_shapley_algorithm() {
+    std::stack<Partner *, std::vector<Partner *>> unmaried_lists{};
+    for (Partner &temp_male : male_partner_lists) {
+      unmaried_lists.push(&temp_male);
+    }
+
+    while (!unmaried_lists.empty()) {
+      Partner *temp_male_point = unmaried_lists.top();
+      Partner &temp_male = *temp_male_point;
+      for (std::string prefer_female_name : temp_male.prefer_partner_name) {
+        Partner &temp_female = get_partner_by_name(prefer_female_name);
+
+        if (temp_female.married_status == MARRIED) {
+          int prev_married = find_index(temp_female.prefer_partner_name,
+                                        temp_female.married_name);
+          int prev_temp_male =
+              find_index(temp_female.prefer_partner_name, temp_male.name);
+
+          if (prev_married == -1 && prev_temp_male == -1) {
+            throw std::runtime_error("优先级出问题");
+          }
+          if (prev_temp_male != -1 && prev_temp_male < prev_married) {
+            Partner &temp_married =
+                get_partner_by_name(temp_female.married_name);
+            // 先放这里，避免之后被修改栈顶，导致错误
+            unmaried_lists.pop();
+            temp_married.married_name = "";
+            temp_married.married_status = NOMARRIED;
+            std::cout << temp_married.name << ":被别人拆散离婚" << std::endl;
+            unmaried_lists.push(&temp_married);
+            temp_female.married_name = temp_male.name;
+            temp_male.married_status = MARRIED;
+            temp_male.married_name = temp_female.name;
+            // 放这里的逻辑就不对了，因为前面添加一个元素，改变了栈顶！
+            //  unmaried_lists.pop();
+            break;
+          }
+        } else {
+          temp_male.married_name = temp_female.name;
+          temp_male.married_status = MARRIED;
+          temp_female.married_name = temp_male.name;
+          temp_female.married_status = MARRIED;
+          std::cout << temp_male.name << ":正常结婚" << std::endl;
+          unmaried_lists.pop();
+          break;
+        }
+      }
+    }
+  }
+
+  void print_married_status() {
+    for (Partner &temp_male : male_partner_lists) {
+
+      std::cout << temp_male.name << ":" << temp_male.married_status << "->"
+                << temp_male.married_name << std::endl;
+    }
+  }
+
+  ~Manager() = default;
+
+private:
+  std::map<std::string, int> male_partner_map;
+  std::map<std::string, int> female_partner_map;
+  void fill_partner_map() {
+
+    int i = 0;
+    for (Partner &male_temp : male_partner_lists) {
+      male_partner_map[male_temp.name] = i;
+      i++;
+    }
+    i = 0;
+    for (Partner &female_temp : female_partner_lists) {
+      female_partner_map[female_temp.name] = i;
+      i++;
+    }
+  }
+
+  int find_index(std::vector<std::string> vector, std::string name) {
+    auto it = std::find(vector.begin(), vector.end(), name);
+    if (it != vector.end()) {
+      return std::distance(vector.begin(), it);
+    }
+    return -1;
+  }
+};
+
+int main() {
+  Manager manger;
+  manger.logging_message("./abc.txt");
+  manger.Gale_shapley_algorithm();
+  manger.print_married_status();
+}

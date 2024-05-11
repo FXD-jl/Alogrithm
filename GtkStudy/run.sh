@@ -1,3 +1,3 @@
 #!/bin/zsh
-cd ./build && cmake..
+cd ./build && rm -rf CMakeCache.txt CMakeFiles && cmake .. && make 
 ./gtkStudy

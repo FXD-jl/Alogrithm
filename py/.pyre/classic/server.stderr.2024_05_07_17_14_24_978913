@@ -1,0 +1,415 @@
+2024-05-07 17:14:25 WARNING Pyre server needs to restart as it is notified on potential changes in `/Users/jl/Documents/Alogrithm/py/.pyre_configuration`
+2024-05-07 17:14:25 INFO Initializing file watching service...
+2024-05-07 17:14:25 INFO Connecting to watchman...
+2024-05-07 17:14:25 INFO Established watchman connection.
+2024-05-07 17:14:25 INFO Request watchman subscription at /Users/jl/Documents/Alogrithm/py
+2024-05-07 17:14:25 INFO Server has started listening on socket `/var/folders/qm/5549l4bs39d9w80ccvqfbtnm0000gn/T/pyre_server_c0e60cd5bbf5e1e89b98b13f79acf8f2.sock`
+2024-05-07 17:14:25 INFO Initializing shared memory (heap_size: 8589934592, dep_table_pow: 27, hash_table_pow: 26)
+2024-05-07 17:14:25 INFO Initializing server state from scratch...
+2024-05-07 17:14:25 INFO Creating environment...
+2024-05-07 17:14:25 INFO Building module tracker...
+2024-05-07 17:14:25 PERFORMANCE Module tracker built: 0.346s
+2024-05-07 17:14:25 PERFORMANCE Full environment built: 0.410s
+2024-05-07 17:14:25 INFO Collecting all definitions...
+2024-05-07 17:14:25 PERFORMANCE Collected definitions (defines: 1): 0.001s
+2024-05-07 17:14:25 INFO Checking 1 functions...
+2024-05-07 17:14:25 PROGRESS Processed 1 of 1 functions
+2024-05-07 17:14:25 PERFORMANCE Check_TypeCheck: 0.218s
+2024-05-07 17:14:25 MEMORY Shared memory size post-typecheck (size: 1)
+2024-05-07 17:14:25 PROGRESS Postprocessing 1 sources...
+2024-05-07 17:14:25 PROGRESS Postprocessed 1 of 1 sources
+2024-05-07 17:14:25 PERFORMANCE Check_Postprocessing: 0.000s
+2024-05-07 17:14:25 PERFORMANCE Initialization (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, initialization method: cold start): 0.665s
+2024-05-07 17:14:25 INFO Server state initialized.
+2024-05-07 17:14:25 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:14:25 INFO Repopulating the environment...
+2024-05-07 17:14:25 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:14:25 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:14:25 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:14:25 MEMORY Shared memory size (size: 1)
+2024-05-07 17:14:25 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.194s
+2024-05-07 17:14:25 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.230s
+2024-05-07 17:14:25 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:14:25 SERVER Connection established
+2024-05-07 17:14:25 SERVER Subscription added: persistent_78834
+2024-05-07 17:14:25 SERVER Processing request (DisplayTypeError())...
+2024-05-07 17:14:25 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: DisplayTypeErrors): 0.000s
+2024-05-07 17:14:25 SERVER Request `(DisplayTypeError())` processed
+2024-05-07 17:14:49 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:14:49 SERVER Update sent to subscription `persistent_78834`
+2024-05-07 17:14:49 SERVER Update sent to subscription `persistent_78834`
+2024-05-07 17:14:49 INFO Repopulating the environment...
+2024-05-07 17:14:49 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:14:49 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:14:49 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:14:49 MEMORY Shared memory size (size: 1)
+2024-05-07 17:14:49 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.145s
+2024-05-07 17:14:49 SERVER Update sent to subscription `persistent_78834`
+2024-05-07 17:14:49 SERVER Update sent to subscription `persistent_78834`
+2024-05-07 17:14:49 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.177s
+2024-05-07 17:14:49 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:15:00 SERVER Connection closed
+2024-05-07 17:15:00 SERVER Subscription removed: persistent_78834
+2024-05-07 17:18:03 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:18:04 INFO Repopulating the environment...
+2024-05-07 17:18:04 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:18:04 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:18:04 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:18:04 MEMORY Shared memory size (size: 1)
+2024-05-07 17:18:04 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.153s
+2024-05-07 17:18:04 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.190s
+2024-05-07 17:18:04 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:18:06 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:18:06 INFO Repopulating the environment...
+2024-05-07 17:18:06 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:18:06 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:18:06 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:18:06 MEMORY Shared memory size (size: 1)
+2024-05-07 17:18:06 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.121s
+2024-05-07 17:18:06 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.155s
+2024-05-07 17:18:06 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:21:27 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:21:28 INFO Repopulating the environment...
+2024-05-07 17:21:28 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:21:28 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:21:28 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:21:28 MEMORY Shared memory size (size: 1)
+2024-05-07 17:21:28 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.139s
+2024-05-07 17:21:28 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.175s
+2024-05-07 17:21:28 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:21:31 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:21:31 INFO Repopulating the environment...
+2024-05-07 17:21:31 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:21:31 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:21:31 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:21:31 MEMORY Shared memory size (size: 1)
+2024-05-07 17:21:31 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.137s
+2024-05-07 17:21:31 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.173s
+2024-05-07 17:21:31 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:21:54 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:21:54 INFO Repopulating the environment...
+2024-05-07 17:21:54 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:21:54 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:21:54 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:21:54 MEMORY Shared memory size (size: 1)
+2024-05-07 17:21:54 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.418s
+2024-05-07 17:21:54 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.455s
+2024-05-07 17:21:54 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:22:01 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:22:01 INFO Repopulating the environment...
+2024-05-07 17:22:01 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:22:01 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:22:01 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:22:01 MEMORY Shared memory size (size: 1)
+2024-05-07 17:22:01 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.127s
+2024-05-07 17:22:01 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.169s
+2024-05-07 17:22:01 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:22:02 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:22:02 INFO Repopulating the environment...
+2024-05-07 17:22:02 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:22:02 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:22:02 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:22:02 MEMORY Shared memory size (size: 1)
+2024-05-07 17:22:02 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.140s
+2024-05-07 17:22:02 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.175s
+2024-05-07 17:22:02 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:22:04 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:22:04 INFO Repopulating the environment...
+2024-05-07 17:22:04 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:22:04 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:22:04 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:22:04 MEMORY Shared memory size (size: 1)
+2024-05-07 17:22:04 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.121s
+2024-05-07 17:22:04 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.154s
+2024-05-07 17:22:04 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:23:06 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:23:06 INFO Repopulating the environment...
+2024-05-07 17:23:06 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:23:06 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:23:06 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:23:06 MEMORY Shared memory size (size: 1)
+2024-05-07 17:23:06 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.128s
+2024-05-07 17:23:07 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.161s
+2024-05-07 17:23:07 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:23:08 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:23:08 INFO Repopulating the environment...
+2024-05-07 17:23:08 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:23:08 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:23:08 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:23:08 MEMORY Shared memory size (size: 1)
+2024-05-07 17:23:08 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.137s
+2024-05-07 17:23:08 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.174s
+2024-05-07 17:23:08 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:28:35 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:28:35 INFO Repopulating the environment...
+2024-05-07 17:28:35 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:28:35 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:28:35 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:28:35 MEMORY Shared memory size (size: 1)
+2024-05-07 17:28:35 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.149s
+2024-05-07 17:28:36 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.183s
+2024-05-07 17:28:36 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:32:39 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:32:39 INFO Repopulating the environment...
+2024-05-07 17:32:39 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:32:39 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:32:39 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:32:39 MEMORY Shared memory size (size: 1)
+2024-05-07 17:32:39 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.158s
+2024-05-07 17:32:39 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.196s
+2024-05-07 17:32:39 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:33:20 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:33:20 INFO Repopulating the environment...
+2024-05-07 17:33:20 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:33:20 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:33:20 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:33:20 MEMORY Shared memory size (size: 1)
+2024-05-07 17:33:20 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.131s
+2024-05-07 17:33:20 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.167s
+2024-05-07 17:33:20 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:33:23 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:33:23 INFO Repopulating the environment...
+2024-05-07 17:33:23 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:33:23 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:33:23 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:33:23 MEMORY Shared memory size (size: 1)
+2024-05-07 17:33:23 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.165s
+2024-05-07 17:33:23 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.206s
+2024-05-07 17:33:23 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:33:32 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:33:32 INFO Repopulating the environment...
+2024-05-07 17:33:32 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:33:32 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:33:32 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:33:32 MEMORY Shared memory size (size: 1)
+2024-05-07 17:33:32 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.151s
+2024-05-07 17:33:32 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.184s
+2024-05-07 17:33:32 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:33:36 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:33:37 INFO Repopulating the environment...
+2024-05-07 17:33:37 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:33:37 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:33:37 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:33:37 MEMORY Shared memory size (size: 1)
+2024-05-07 17:33:37 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.128s
+2024-05-07 17:33:37 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.165s
+2024-05-07 17:33:37 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:35:41 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:35:41 INFO Repopulating the environment...
+2024-05-07 17:35:41 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:35:41 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:35:41 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:35:41 MEMORY Shared memory size (size: 1)
+2024-05-07 17:35:41 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.128s
+2024-05-07 17:35:41 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.168s
+2024-05-07 17:35:41 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:35:44 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:35:44 INFO Repopulating the environment...
+2024-05-07 17:35:44 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:35:44 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:35:44 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:35:44 MEMORY Shared memory size (size: 1)
+2024-05-07 17:35:44 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.135s
+2024-05-07 17:35:44 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.169s
+2024-05-07 17:35:44 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:35:45 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:35:46 INFO Repopulating the environment...
+2024-05-07 17:35:46 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:35:46 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:35:46 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:35:46 MEMORY Shared memory size (size: 1)
+2024-05-07 17:35:46 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.139s
+2024-05-07 17:35:46 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.176s
+2024-05-07 17:35:46 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:36:21 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:36:21 INFO Repopulating the environment...
+2024-05-07 17:36:21 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:36:21 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:36:21 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:36:21 MEMORY Shared memory size (size: 1)
+2024-05-07 17:36:21 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.135s
+2024-05-07 17:36:21 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.178s
+2024-05-07 17:36:21 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:36:43 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:36:43 INFO Repopulating the environment...
+2024-05-07 17:36:43 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:36:43 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:36:43 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:36:43 MEMORY Shared memory size (size: 1)
+2024-05-07 17:36:43 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.142s
+2024-05-07 17:36:43 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.177s
+2024-05-07 17:36:43 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:36:59 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:36:59 INFO Repopulating the environment...
+2024-05-07 17:36:59 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:36:59 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:36:59 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:36:59 MEMORY Shared memory size (size: 1)
+2024-05-07 17:36:59 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.129s
+2024-05-07 17:36:59 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.169s
+2024-05-07 17:36:59 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:37:09 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:37:09 INFO Repopulating the environment...
+2024-05-07 17:37:09 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:37:09 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:37:09 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:37:09 MEMORY Shared memory size (size: 1)
+2024-05-07 17:37:09 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.144s
+2024-05-07 17:37:09 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.194s
+2024-05-07 17:37:09 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:38:42 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:38:42 INFO Repopulating the environment...
+2024-05-07 17:38:42 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:38:42 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:38:42 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:38:42 MEMORY Shared memory size (size: 1)
+2024-05-07 17:38:42 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.150s
+2024-05-07 17:38:42 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.182s
+2024-05-07 17:38:42 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:39:08 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:39:08 INFO Repopulating the environment...
+2024-05-07 17:39:08 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:39:08 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:39:08 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:39:08 MEMORY Shared memory size (size: 1)
+2024-05-07 17:39:08 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.139s
+2024-05-07 17:39:08 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.185s
+2024-05-07 17:39:08 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:39:10 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:39:10 INFO Repopulating the environment...
+2024-05-07 17:39:10 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:39:10 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:39:10 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:39:10 MEMORY Shared memory size (size: 1)
+2024-05-07 17:39:10 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.133s
+2024-05-07 17:39:10 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.169s
+2024-05-07 17:39:10 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:39:20 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:39:20 INFO Repopulating the environment...
+2024-05-07 17:39:20 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:39:20 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:39:20 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:39:20 MEMORY Shared memory size (size: 1)
+2024-05-07 17:39:20 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.151s
+2024-05-07 17:39:20 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.188s
+2024-05-07 17:39:20 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:41:45 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:41:45 INFO Repopulating the environment...
+2024-05-07 17:41:45 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:41:45 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:41:45 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:41:45 MEMORY Shared memory size (size: 1)
+2024-05-07 17:41:45 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.148s
+2024-05-07 17:41:45 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.182s
+2024-05-07 17:41:45 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:42:06 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:42:07 INFO Repopulating the environment...
+2024-05-07 17:42:07 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:42:07 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:42:07 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:42:07 MEMORY Shared memory size (size: 1)
+2024-05-07 17:42:07 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.136s
+2024-05-07 17:42:07 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.173s
+2024-05-07 17:42:07 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:44:29 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:44:29 INFO Repopulating the environment...
+2024-05-07 17:44:29 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:44:29 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:44:29 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:44:29 MEMORY Shared memory size (size: 1)
+2024-05-07 17:44:29 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.137s
+2024-05-07 17:44:29 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.173s
+2024-05-07 17:44:29 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 17:53:38 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 17:53:39 INFO Repopulating the environment...
+2024-05-07 17:53:39 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 17:53:39 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 17:53:39 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 17:53:39 MEMORY Shared memory size (size: 1)
+2024-05-07 17:53:39 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.147s
+2024-05-07 17:53:39 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.187s
+2024-05-07 17:53:39 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 18:00:37 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 18:00:37 INFO Repopulating the environment...
+2024-05-07 18:00:37 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 18:00:37 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 18:00:37 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 18:00:37 MEMORY Shared memory size (size: 1)
+2024-05-07 18:00:37 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.143s
+2024-05-07 18:00:37 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.180s
+2024-05-07 18:00:37 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 18:00:38 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 18:00:38 INFO Repopulating the environment...
+2024-05-07 18:00:38 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 18:00:38 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 18:00:38 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 18:00:38 MEMORY Shared memory size (size: 1)
+2024-05-07 18:00:38 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.113s
+2024-05-07 18:00:38 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.155s
+2024-05-07 18:00:38 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 18:28:17 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 18:28:18 INFO Repopulating the environment...
+2024-05-07 18:28:18 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 18:28:18 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 18:28:18 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 18:28:18 MEMORY Shared memory size (size: 1)
+2024-05-07 18:28:18 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.182s
+2024-05-07 18:28:18 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.221s
+2024-05-07 18:28:18 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 18:28:23 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 18:28:23 INFO Repopulating the environment...
+2024-05-07 18:28:23 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 18:28:23 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 18:28:23 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 18:28:23 MEMORY Shared memory size (size: 1)
+2024-05-07 18:28:23 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.142s
+2024-05-07 18:28:23 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.173s
+2024-05-07 18:28:23 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 18:28:26 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 18:28:26 INFO Repopulating the environment...
+2024-05-07 18:28:26 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 18:28:26 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 18:28:26 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 18:28:26 MEMORY Shared memory size (size: 1)
+2024-05-07 18:28:26 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.136s
+2024-05-07 18:28:26 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.171s
+2024-05-07 18:28:26 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 21:44:49 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 21:44:49 INFO Repopulating the environment...
+2024-05-07 21:44:49 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 21:44:49 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 21:44:49 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 21:44:49 MEMORY Shared memory size (size: 1)
+2024-05-07 21:44:49 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.262s
+2024-05-07 21:44:49 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.301s
+2024-05-07 21:44:49 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 21:45:25 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 21:45:25 INFO Repopulating the environment...
+2024-05-07 21:45:25 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 21:45:25 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 21:45:25 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 21:45:25 MEMORY Shared memory size (size: 1)
+2024-05-07 21:45:25 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 0, number of re-checked functions: 0): 0.126s
+2024-05-07 21:45:25 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.162s
+2024-05-07 21:45:25 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 21:45:34 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 21:45:34 INFO Repopulating the environment...
+2024-05-07 21:45:34 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 21:45:34 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 21:45:34 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 21:45:34 MEMORY Shared memory size (size: 1)
+2024-05-07 21:45:34 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.125s
+2024-05-07 21:45:35 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.164s
+2024-05-07 21:45:35 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 21:45:36 SERVER Processing request (IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))...
+2024-05-07 21:45:37 INFO Repopulating the environment...
+2024-05-07 21:45:37 SERVER Explicit Module Update: (explicit_updates((Changed((raw((relative main.py)(priority 164)))(qualifier(main))(is_stub false)(is_external false)(is_init false)))))
+2024-05-07 21:45:37 SERVER Implicit Module Update: (implicit_updates())
+2024-05-07 21:45:37 PERFORMANCE Module tracker updated: 0.000s
+2024-05-07 21:45:37 MEMORY Shared memory size (size: 1)
+2024-05-07 21:45:37 PERFORMANCE Incremental check (number of changed files: 1, number of module tracker updates: 1, number of parser updates: 1, number of rechecked modules: 1, number of re-checked functions: 1): 0.138s
+2024-05-07 21:45:37 PERFORMANCE Server request (binary_version: dc25037355687420c6f28e0c81f94b3304cc9327, request kind: IncrementalCheck): 0.172s
+2024-05-07 21:45:37 SERVER Request `(IncrementalUpdate(/Users/jl/Documents/Alogrithm/py/main.py))` processed
+2024-05-07 23:23:00 INFO Shutting down watchman connection...
+2024-05-07 23:23:00 INFO Server is going down. Cleaning up...
+2024-05-07 23:23:00 INFO Watchman subscription error: Lost subscription connection to watchman

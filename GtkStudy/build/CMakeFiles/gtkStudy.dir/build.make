@@ -69,10 +69,38 @@ include CMakeFiles/gtkStudy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gtkStudy.dir/flags.make
 
+CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o: CMakeFiles/gtkStudy.dir/flags.make
+CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o: /Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7-2.c
+CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o: CMakeFiles/gtkStudy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jl/Documents/Alogrithm/GtkStudy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o -MF CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o.d -o CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o -c /Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7-2.c
+
+CMakeFiles/gtkStudy.dir/src/chapter7-2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gtkStudy.dir/src/chapter7-2.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7-2.c > CMakeFiles/gtkStudy.dir/src/chapter7-2.c.i
+
+CMakeFiles/gtkStudy.dir/src/chapter7-2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gtkStudy.dir/src/chapter7-2.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7-2.c -o CMakeFiles/gtkStudy.dir/src/chapter7-2.c.s
+
+CMakeFiles/gtkStudy.dir/src/chapter7.c.o: CMakeFiles/gtkStudy.dir/flags.make
+CMakeFiles/gtkStudy.dir/src/chapter7.c.o: /Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7.c
+CMakeFiles/gtkStudy.dir/src/chapter7.c.o: CMakeFiles/gtkStudy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jl/Documents/Alogrithm/GtkStudy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gtkStudy.dir/src/chapter7.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gtkStudy.dir/src/chapter7.c.o -MF CMakeFiles/gtkStudy.dir/src/chapter7.c.o.d -o CMakeFiles/gtkStudy.dir/src/chapter7.c.o -c /Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7.c
+
+CMakeFiles/gtkStudy.dir/src/chapter7.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gtkStudy.dir/src/chapter7.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7.c > CMakeFiles/gtkStudy.dir/src/chapter7.c.i
+
+CMakeFiles/gtkStudy.dir/src/chapter7.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gtkStudy.dir/src/chapter7.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7.c -o CMakeFiles/gtkStudy.dir/src/chapter7.c.s
+
 CMakeFiles/gtkStudy.dir/src/main.c.o: CMakeFiles/gtkStudy.dir/flags.make
 CMakeFiles/gtkStudy.dir/src/main.c.o: /Users/jl/Documents/Alogrithm/GtkStudy/src/main.c
 CMakeFiles/gtkStudy.dir/src/main.c.o: CMakeFiles/gtkStudy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jl/Documents/Alogrithm/GtkStudy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gtkStudy.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jl/Documents/Alogrithm/GtkStudy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/gtkStudy.dir/src/main.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gtkStudy.dir/src/main.c.o -MF CMakeFiles/gtkStudy.dir/src/main.c.o.d -o CMakeFiles/gtkStudy.dir/src/main.c.o -c /Users/jl/Documents/Alogrithm/GtkStudy/src/main.c
 
 CMakeFiles/gtkStudy.dir/src/main.c.i: cmake_force
@@ -85,15 +113,19 @@ CMakeFiles/gtkStudy.dir/src/main.c.s: cmake_force
 
 # Object files for target gtkStudy
 gtkStudy_OBJECTS = \
+"CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o" \
+"CMakeFiles/gtkStudy.dir/src/chapter7.c.o" \
 "CMakeFiles/gtkStudy.dir/src/main.c.o"
 
 # External object files for target gtkStudy
 gtkStudy_EXTERNAL_OBJECTS =
 
+gtkStudy: CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o
+gtkStudy: CMakeFiles/gtkStudy.dir/src/chapter7.c.o
 gtkStudy: CMakeFiles/gtkStudy.dir/src/main.c.o
 gtkStudy: CMakeFiles/gtkStudy.dir/build.make
 gtkStudy: CMakeFiles/gtkStudy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jl/Documents/Alogrithm/GtkStudy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gtkStudy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jl/Documents/Alogrithm/GtkStudy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable gtkStudy"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtkStudy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

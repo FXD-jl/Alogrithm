@@ -129,6 +129,54 @@ gtkStudy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtkStudy.dir/build.make CMakeFiles/gtkStudy.dir/build
 .PHONY : gtkStudy/fast
 
+src/chapter7-2.o: src/chapter7-2.c.o
+.PHONY : src/chapter7-2.o
+
+# target to build an object file
+src/chapter7-2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtkStudy.dir/build.make CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o
+.PHONY : src/chapter7-2.c.o
+
+src/chapter7-2.i: src/chapter7-2.c.i
+.PHONY : src/chapter7-2.i
+
+# target to preprocess a source file
+src/chapter7-2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtkStudy.dir/build.make CMakeFiles/gtkStudy.dir/src/chapter7-2.c.i
+.PHONY : src/chapter7-2.c.i
+
+src/chapter7-2.s: src/chapter7-2.c.s
+.PHONY : src/chapter7-2.s
+
+# target to generate assembly for a file
+src/chapter7-2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtkStudy.dir/build.make CMakeFiles/gtkStudy.dir/src/chapter7-2.c.s
+.PHONY : src/chapter7-2.c.s
+
+src/chapter7.o: src/chapter7.c.o
+.PHONY : src/chapter7.o
+
+# target to build an object file
+src/chapter7.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtkStudy.dir/build.make CMakeFiles/gtkStudy.dir/src/chapter7.c.o
+.PHONY : src/chapter7.c.o
+
+src/chapter7.i: src/chapter7.c.i
+.PHONY : src/chapter7.i
+
+# target to preprocess a source file
+src/chapter7.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtkStudy.dir/build.make CMakeFiles/gtkStudy.dir/src/chapter7.c.i
+.PHONY : src/chapter7.c.i
+
+src/chapter7.s: src/chapter7.c.s
+.PHONY : src/chapter7.s
+
+# target to generate assembly for a file
+src/chapter7.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtkStudy.dir/build.make CMakeFiles/gtkStudy.dir/src/chapter7.c.s
+.PHONY : src/chapter7.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gtkStudy"
+	@echo "... src/chapter7-2.o"
+	@echo "... src/chapter7-2.i"
+	@echo "... src/chapter7-2.s"
+	@echo "... src/chapter7.o"
+	@echo "... src/chapter7.i"
+	@echo "... src/chapter7.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

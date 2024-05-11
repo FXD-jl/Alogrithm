@@ -1,0 +1,8 @@
+0 male_a 20 female_a female_b female_c female_d
+0 male_b 20 female_b female_a female_c female_d
+0 male_c 20 female_b female_c female_d female_a
+0 male_d 20 female_c female_d female_b female_a
+1 female_a 20 male_a male_b male_d male_c
+1 female_b 20 male_b male_c male_a male_d
+1 female_c 20 male_d male_a male_c male_b
+1 female_d 20 male_c male_b male_a male_d

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7-2.c" "CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o" "gcc" "CMakeFiles/gtkStudy.dir/src/chapter7-2.c.o.d"
+  "/Users/jl/Documents/Alogrithm/GtkStudy/src/chapter7.c" "CMakeFiles/gtkStudy.dir/src/chapter7.c.o" "gcc" "CMakeFiles/gtkStudy.dir/src/chapter7.c.o.d"
   "/Users/jl/Documents/Alogrithm/GtkStudy/src/main.c" "CMakeFiles/gtkStudy.dir/src/main.c.o" "gcc" "CMakeFiles/gtkStudy.dir/src/main.c.o.d"
   )
 
